@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin thành viên</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <h2 align="center">PHIẾU ĐĂNG KÝ</h2>
+        <table align="center" cellpadding="4">
+            <tr>
+                <td align="right">Họ và tên:</td>
+                <td>
+                    <input type="text" name="hoten" size="30" required> (*)
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Địa chỉ:</td>
+                <td>
+                    <input type="text" name="diachi" size="45">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Email:</td>
+                <td>
+                    <input type="email" name="email" size="30" required> (*)
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Giới tính:</td>
+                <td>
+                    <input type="radio" name="gioitinh" value="Nam" id="nam" checked>
+                    <label for="nam">Nam</label>
+                    <input type="radio" name="gioitinh" value="Nữ" id="nu">
+                    <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Tuổi:</td>
+                <td>
+                    <input type="number" name="tuoi" style="width: 60px;" required> (*)
+                </td>
+            </tr>
+            <tr valign="top">
+                <td align="right">Sở thích:</td>
+                <td>
+                    <input type="checkbox" name="sothich[]" value="The thao" id="st1"> <label for="st1">Thể thao</label><br>
+                    <input type="checkbox" name="sothich[]" value="Van hoc" id="st2"> <label for="st2">Văn học</label><br>
+                    <input type="checkbox" name="sothich[]" value="CNTT" id="st3"> <label for="st3">Công nghệ thông tin</label><br>
+                    <input type="checkbox" name="sothich[]" value="Lich su" id="st4"> <label for="st4">Lịch sử</label><br>
+                    <input type="checkbox" name="sothich[]" value="Game" id="st5"> <label for="st5">Game</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Chuyên ngành:</td>
+                <td>
+                    <select name="chuyennganh">
+                        <option value="web">Công nghệ Web</option>
+                        <option value="pm">Kỹ thuật phần mềm</option>
+                        <option value="mang">Mạng máy tính</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Gởi hình:</td>
+                <td>
+                    <input type="file" name="hinhanh">
+                </td>
+            </tr>
+            <tr valign="top">
+                <td align="right">Yêu cầu:</td>
+                <td>
+                    <textarea name="yeucau" rows="4" cols="35"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Gởi thông tin</button>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

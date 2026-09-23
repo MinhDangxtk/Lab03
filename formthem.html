@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form action="" method="POST">
+        <h2>Registration Form</h2>
+
+        <table>
+            <!-- First Name -->
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" name="firstname" placeholder="Enter First Name"></td>
+            </tr>
+
+            <!-- Last Name -->
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" name="lastname" placeholder="Enter Last Name"></td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" placeholder="Enter Email Address"></td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td colspan="2">Gender:</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Male <input type="radio" name="gender" value="male"><br>
+                    Female <input type="radio" name="gender" value="female"><br>
+                    Other <input type="radio" name="gender" value="other">
+                </td>
+            </tr>
+
+            <!-- Age -->
+            <tr>
+                <td>Age :</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+
+            <!-- Preferences -->
+            <tr>
+                <td colspan="2">Preferences :</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Acrylic Painting <input type="checkbox" name="preferences[]" value="acrylic"><br>
+                    Oil Painting <input type="checkbox" name="preferences[]" value="oil"><br>
+                    Water Color Painting <input type="checkbox" name="preferences[]" value="watercolor">
+                </td>
+            </tr>
+
+            <!-- Select Occupation -->
+            <tr>
+                <td>Select Occupation</td>
+                <td>
+                    <select name="occupation">
+                        <option value="student">Student</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Bio / Textarea -->
+            <tr valign="top">
+                <td valign="bottom">Bio</td>
+                <td>
+                    <textarea name="bio" rows="6" cols="30" placeholder="Share few lines about yourself..."></textarea>
+                </td>
+            </tr>
+
+            <!-- Buttons -->
+            <tr>
+                <td colspan="2">
+                    <input type="reset" value="RESET">
+                    <input type="submit" value="SUBMIT">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
